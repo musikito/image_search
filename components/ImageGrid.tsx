@@ -10,7 +10,7 @@ type ImageGridProps = {
     images: ImageData[]
 }
 
-export default function ImageGrid({ images }: Readonly<ImageGridProps>) {
+export default function ImageGrid({ images }: ImageGridProps) {
     if (!images || images.length === 0) {
         return <p className="text-center text-gray-500 mt-8">No images found.</p>
     }
